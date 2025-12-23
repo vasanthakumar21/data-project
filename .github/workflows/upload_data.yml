@@ -22,4 +22,4 @@ jobs:
 
       - name: Upload data to S3
         run: |
-          aws s3 sync data/ s3://kaggle-raw-bucket/input/
+          aws s3 sync data/ s3://kaggle-raw-bucket-vas/input/
