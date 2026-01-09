@@ -26,9 +26,8 @@ jobs:
 
       # Verify which AWS identity GitHub Actions is using
       - name: Verify AWS identity
-        run: aws sts get-caller-identity
-
+        run: aws sts get-caller-identity 
       # Upload Glue ETL script to S3
       - name: Upload Glue script to S3
         run: |
-          aws s3 cp glue/etl.py s3://kaggle-glue-script-bucket-vas/scripts/etl.py
+          aws s3 cp glue/etl.py s3://kaggle-glue-script-bucket-vas1/scripts/etl.py
